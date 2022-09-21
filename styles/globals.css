@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
+
+@layer components {
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
+}
