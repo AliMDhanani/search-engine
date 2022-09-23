@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Avatar from "../components/Avatar";
+import Image from "next/image";
+import { BsSearch } from "react-icons/bs";
+import { FaMicrophone } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -21,12 +24,32 @@ export default function Home() {
           <p className="link">Images</p>
 
           {/* Icon */}
-          {/* <ViewGridIcon /> */}
-          <Avatar url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfM-pq4nauviZTexr2oGkeAgd6p0h_naPCKsBUUYCZOndzVRt60X2S9-EiOmwm--LRQ4k&usqp=CAU" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer"
+          >
+            <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+          </svg>
+          <Avatar url="https://media-exp1.licdn.com/dms/image/C4E03AQGC-emMf82Vqw/profile-displayphoto-shrink_200_200/0/1619178667306?e=1669248000&v=beta&t=_aUJIbLi0qPQOUR2OZsxr3kkbel6QeBdxQc8jzLfc8k" />
         </div>
       </header>
       {/* BODY */}
+      <form className="flex flex-col items-center mt-40 flex-grow">
+        <img src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" height={100} width={400}/>
+        <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
+          <BsSearch className="h-5 mr-3 text-gray-500" />
+          <input type="text" className=" flex-grow focus:outline-none" />
+          <FaMicrophone className="h-5" />
+        </div>
+        <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4">
+          <button className="btn">Google Search</button>
 
+          <button className="btn">I'm Feeling Lucky</button>
+        </div>
+      </form>
       {/* FOOTER */}
     </div>
   );
