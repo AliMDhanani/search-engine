@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="flex justify-center items-center md:col-span-2 lg:col-span-1 lg:col-start-2">
         <FaLeaf className="h-5 mr-1 text-green-700" /> carbon neutral since 2007
         </div>
-        <div className="flex justify-center space-x-8 whitespace-nowrap md:justify-self-start">
+        <div className="flex justify-center space-x-8 whitespace-nowrap md:justify-self-start cursor-not-allowed">
           <p>Advertising</p>
           <p>Business</p>
           <p>How Search Works</p>
         </div>
-        <div className="flex justify-center space-x-8 md:ml-auto">
+        <div className="flex justify-center space-x-8 md:ml-auto cursor-not-allowed">
           <p>Privacy</p>
           <p>Terms</p>
           <p>Settings</p>
