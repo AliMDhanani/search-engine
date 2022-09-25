@@ -42,6 +42,7 @@ const Header = () => {
         </form>
         <Avatar className="ml-auto" url="https://media-exp1.licdn.com/dms/image/C4E03AQGC-emMf82Vqw/profile-displayphoto-shrink_200_200/0/1619178667306?e=1669248000&v=beta&t=_aUJIbLi0qPQOUR2OZsxr3kkbel6QeBdxQc8jzLfc8k" />
       </div>
+      <HeaderOptions />
     </header>
   );
 };
