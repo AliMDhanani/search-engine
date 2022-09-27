@@ -11,15 +11,16 @@ import {
 
 const HeaderOptions = () => {
   return (
-    <div>
+    <div className="flex w-full text-gray-700 justify-evenly test-sm lg:text-base 
+      lg:justify-start lg:space-x-36 lg:pl-52 border-b">
       {/* Left */}
       <div className="flex space-x-6">
-        <HeaderOption Icon={HiSearch} title="All" selected/>
-        <HeaderOption Icon={HiPhotograph} title="Images" selected/>
-        <HeaderOption Icon={HiPlay} title="Videos" selected/>
-        <HeaderOption Icon={HiNewspaper} title="News" selected/>
-        <HeaderOption Icon={HiMap} title="Maps" selected/>
-        <HeaderOption Icon={HiDotsVertical} title="More" selected/>
+        <HeaderOption Icon={HiSearch} title="All" selected />
+        <HeaderOption Icon={HiPhotograph} title="Images" />
+        <HeaderOption Icon={HiPlay} title="Videos" />
+        <HeaderOption Icon={HiNewspaper} title="News" />
+        <HeaderOption Icon={HiMap} title="Maps" />
+        <HeaderOption Icon={HiDotsVertical} title="More" />
       </div>
       {/* Right */}
       <div className="flex space-x-4">
