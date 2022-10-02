@@ -14,8 +14,8 @@ export default function Home() {
     e.preventDefault();
     const term = searchInputRef.current.value;
 
-    if (!term) return; 
-    
+    if (!term) return;
+
     router.push(`/search?term=${term}`);
   };
 
@@ -40,7 +40,7 @@ export default function Home() {
           {/* Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
+            className="h-5 w-5"
             viewBox="0 0 20 20"
             fill="currentColor"
             className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer"
